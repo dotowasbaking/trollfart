@@ -10,5 +10,5 @@ local ClassBinderProvider = require("ClassBinderProvider")
 return ClassBinderProvider.new(function(self)
     self:AddClassBinder(ClassBinder.new("InteractionHint", require("InteractionHintClient")))
 
-    -- self:AddClassBinder(ClassBinder.new("Name", require("Name")))
+    self:AddClassBinder(ClassBinder.new("IKLegs", require("IKLegsClient")))
 end)

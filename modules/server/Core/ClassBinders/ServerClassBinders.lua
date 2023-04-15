@@ -4,10 +4,10 @@
 
 local require = require(game:GetService("ReplicatedStorage"):WaitForChild("Compliance"))
 
--- local ClassBinder = require("ClassBinder")
+local ClassBinder = require("ClassBinder")
 local ClassBinderProvider = require("ClassBinderProvider")
 
 return ClassBinderProvider.new(function(self)
-    -- self:AddClassBinder(ClassBinder.new("Name", require("Name")))
+    self:AddClassBinder(ClassBinder.new("IKLegs", require("IKLegs")))
 end)
 
